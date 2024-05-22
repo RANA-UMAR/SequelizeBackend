@@ -24,7 +24,7 @@ const signUp = async (req, res) => {
       });
     }
  
-    const imageUrl = `http://localhost:${PORT}/uploads/${picture.filename}`;
+    const imageUrl = `/uploads/${picture.filename}`;
     const created = await Admin.create({
       Name: Name,
       email: email,
